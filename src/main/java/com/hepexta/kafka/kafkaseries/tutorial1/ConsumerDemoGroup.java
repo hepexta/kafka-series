@@ -11,10 +11,10 @@ import java.util.Arrays;
 
 import static com.hepexta.kafka.kafkaseries.tutorial1.KafkaConfig.getConsumerProperties;
 
-public class ConsumerDemo {
+public class ConsumerDemoGroup {
 
     private static final Logger LOG = LoggerFactory.getLogger(ProducerDemoCallback.class);
-    private static final String GROUP_ID = "my-first-group";
+    private static final String GROUP_ID = "my-second-group";
 
     public static void main(String[] args) {
 

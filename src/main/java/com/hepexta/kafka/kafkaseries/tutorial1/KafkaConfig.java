@@ -19,9 +19,7 @@ public class KafkaConfig {
         return properties;
     }
 
-    public static Properties getConsumerProperties() {
-        String groupId = "my-first-group";
-
+    public static Properties getConsumerProperties(String groupId) {
         Properties properties = new Properties();
         properties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
         properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
