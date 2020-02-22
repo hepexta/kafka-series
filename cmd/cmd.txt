@@ -1,5 +1,3 @@
-# kafka-series
-
 cd d:\Work\kafka\kafka_2.11-1.0.1\bin\windows\
 
 #starting zookeeper
@@ -33,3 +31,6 @@ kafka-consumer-groups.bat --bootstrap-server localhost:9092 --describe --group m
 # Consumer group --reset-offsets
 kafka-consumer-groups.bat --bootstrap-server localhost:9092 --group my-first-group --reset-offsets --to-earliest --execute --topic first
 kafka-consumer-groups.bat --bootstrap-server localhost:9092 --group my-first-group --reset-offsets --shift-by -2 --execute --topic first
+
+#In application
+run_params.bat localhost:9092 first old sync 500 10
